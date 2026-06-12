@@ -1,0 +1,59 @@
+VAIDIK KUMAR
+ï Vaidik Kumar # vaidik2001@gmail.com § V4IDIK  +91-8447321221
+PROFILE SUMMARY
+Computer Science undergraduate with expertise in Python, Data Structures & Algorithms, Machine Learning, and
+Generative AI technologies. Hands-on experience in developing intelligent systems, including a reinforcement learning-
+based chess engine and a CNN-based malaria detection model. Proficient in building scalable applications using modern
+AI frameworks. Strong analytical, problem-solving, and teamwork skills demonstrated through hackathons and technical
+competitions.
+EXPERIENCE
+Oni Infotech
+May 2025 – July 2025
+Machine Learning Intern
+• Developed and evaluated machine learning models for detecting phishing emails, leveraging NLP-based features to
+identify malicious intent.
+• Engineered a robust feature extraction pipeline using TF-IDF and n-grams to analyze email body text, headers, and
+sender/domain patterns with Python and Scikit-learn.
+• Trained and compared Logistic Regression, Random Forest, and SVM models using precision, recall, and F1-score to
+determine the most effective classifier.
+• Managed end-to-end data preprocessing workflows, including text cleaning, handling class imbalance via oversampling,
+and ensuring model stability through cross-validation.
+• Analyzed URL patterns and domain reputation to improve detection accuracy and reduce false positive rates in real-
+time classification scenarios.
+PROJECTS
+Malaria Detection with Deep Learning
+Aug 2025 – Dec 2025
+Tech Stack: Python, TensorFlow, OpenCV, NumPy
+• Developed and optimized a CNN (EfficientNetB3) to classify blood smear images as parasitized or uninfected, utilizing
+OpenCV for advanced image preprocessing and noise reduction.
+• Implemented comprehensive data augmentation strategies and hyperparameter tuning to mitigate overfitting, ulti-
+mately achieving 94% classification accuracy for potential clinical application.
+Reinforcement Learning vs Large Language Model in Chess Engine
+Jan 2026 – Apr 2026
+Tech Stack: Python, PyTorch, PPO, Transformers, OpenAI Gym
+• Developed a chess-playing agent using Proximal Policy Optimization (PPO) and compared it with LLM-based move
+generation for strategic decision-making.
+• Integrated OpenAI Gym environments with custom chess logic to simulate and train agents against established open-
+source engines.
+• Conducted a comparative analysis highlighting key differences in reward shaping, state representation, and long-term
+planning between RL and LLM approaches.
+SKILLS
+• Languages: C, C++, Python, Java, JavaScript, SQL
+• AI/ML: Machine Learning, NLP, LLMs, RAG, Computer Vision, Agentic AI
+• Frameworks/Libraries: Flask, Django, LangChain, LangGraph, scikit-learn, Pandas, NumPy, Matplotlib
+• Tools & Databases: Git, GitHub, Jupyter Notebook, VS Code, MySQL, ChromaDB, Cursor
+• Core Concepts: DSA, OOP, DBMS, OS
+ACHIEVEMENTS
+• Technovation Hackathon 2025 – Qualified for finals among 50 collegiate teams by designing a real-time adaptive
+traffic signal system to optimize congestion and reduce fuel emissions.
+• Elementary SciTech 2024 – Runner-Up in the Open SciTech Contest at IIT Delhi (AI & Robotics).
+• Competitive Programming – Solved 250+ LeetCode problems; 1000+ rating on Codeforces.
+CERTIFICATIONS & COURSEWORK
+• Oracle Cloud Infrastructure 2025 Certified AI Foundations: AI fundamentals, ML concepts, and OCI AI
+services
+• Machine Learning by Andrew Ng (Coursera): Covered Supervised & Unsupervised Learning
+• Corporate Social Responsibility (NPTEL - ONT502): Learned CSR fundamentals and implementation.
+EDUCATION
+Sharda University
+Aug 2023 – Present
+Bachelor of Technology in Computer Science

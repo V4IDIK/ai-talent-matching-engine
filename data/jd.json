@@ -1,0 +1,18 @@
+{
+    "job_title": "Software Engineer Intern (AI/ML)",
+    "required_skills": [
+        "Python",
+        "Machine Learning",
+        "NLP",
+        "LangChain",
+        "LangGraph",
+        "RAG",
+        "FastAPI",
+        "Vector Databases"
+    ],
+    "responsibilities": [
+        "Build AI-powered matching systems",
+        "Work with LLMs",
+        "Develop retrieval pipelines"
+    ]
+}
