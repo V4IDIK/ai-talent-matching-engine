@@ -30,5 +30,14 @@ def get_top_candidate():
 
     return candidate_profile
 
+def get_top_candidates(k=5):
+
+    results = collection.query(
+        query_embeddings=[query_embedding],
+        n_results=k
+    )
+
+    return results["documents"][0]
+
 if __name__ == "__main__":
     print(get_top_candidate())

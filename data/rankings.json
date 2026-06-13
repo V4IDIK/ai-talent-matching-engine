@@ -1,0 +1,131 @@
+[
+    {
+        "candidate": "Rohan Gupta",
+        "score": 62.5,
+        "evaluation": {
+            "match_score": 62.5,
+            "matching_skills": [
+                "Python",
+                "LangChain",
+                "LangGraph",
+                "RAG",
+                "Vector Databases"
+            ],
+            "Missing_skills": [
+                "Machine Learning",
+                "NLP",
+                "FastAPI"
+            ],
+            "strengths": [
+                "Strong practical experience with LLM orchestration frameworks (LangChain, LangGraph) and Retrieval-Augmented Generation (RAG).",
+                "Demonstrates hands-on experience with a specific vector database (ChromaDB), indicating practical implementation skills.",
+                "Proficient in Python, the core language for AI/ML development.",
+                "Directly aligns with key responsibilities like working with LLMs and developing retrieval pipelines."
+            ],
+            "weaknesses": [
+                "Lacks explicit mention of foundational Machine Learning and Natural Language Processing (NLP) skills, which are crucial for a broader AI/ML role.",
+                "Missing experience with FastAPI, a common framework for building AI-powered APIs.",
+                "While RAG is covered, the depth of theoretical understanding in general ML/NLP might need further assessment."
+            ],
+            "recommendation": "Rohan is a strong candidate for an intern role heavily focused on LLM integration, RAG pipeline development, and vector database interaction. His direct experience with LangChain, LangGraph, RAG, and ChromaDB is highly relevant to the core responsibilities. However, to fully align with the 'AI/ML' scope, it would be beneficial to assess his foundational knowledge in general Machine Learning and NLP concepts. His ability to quickly learn FastAPI should also be explored."
+        }
+    },
+    {
+        "candidate": "Aarav Sharma",
+        "score": 37.5,
+        "evaluation": {
+            "match_score": 37.5,
+            "matching_skills": [
+                "Python",
+                "Machine Learning",
+                "FastAPI"
+            ],
+            "Missing_skills": [
+                "NLP",
+                "LangChain",
+                "LangGraph",
+                "RAG",
+                "Vector Databases"
+            ],
+            "strengths": [
+                "Strong foundational programming skills in Python.",
+                "Solid understanding of Machine Learning concepts.",
+                "Experience with a prominent ML framework (TensorFlow).",
+                "Proficiency in building APIs with FastAPI.",
+                "Cloud experience with AWS is a valuable asset for deploying AI/ML solutions."
+            ],
+            "weaknesses": [
+                "Lacks explicit experience in Natural Language Processing (NLP), which is a key component of the role.",
+                "No stated experience with specialized LLM orchestration frameworks like LangChain and LangGraph.",
+                "Missing experience in Retrieval Augmented Generation (RAG) and Vector Databases, which are crucial for developing retrieval pipelines.",
+                "While having general ML skills, the candidate specifically lacks the modern AI/LLM ecosystem tools mentioned in the job description."
+            ],
+            "recommendation": "Aarav has a strong foundation in Python, Machine Learning, and API development, complemented by valuable cloud experience. However, there are significant gaps in specialized AI/LLM skills such as NLP, LangChain, LangGraph, RAG, and Vector Databases, which are central to this internship. While his core ML skills are relevant, the role specifically requires familiarity with the modern LLM ecosystem. Further inquiry would be needed to assess his ability to quickly pick up these specific technologies or if his general ML background implicitly covers some aspects. For this specific AI/ML intern role focused on LLMs and retrieval pipelines, Aarav would require substantial learning and development in the missing areas."
+        }
+    },
+    {
+        "candidate": "Sandeep Kumar",
+        "score": 12.5,
+        "evaluation": {
+            "match_score": 12.5,
+            "matching_skills": [
+                "Machine Learning"
+            ],
+            "Missing_skills": [
+                "Python",
+                "NLP",
+                "LangChain",
+                "LangGraph",
+                "RAG",
+                "FastAPI",
+                "Vector Databases"
+            ],
+            "strengths": [
+                "Solid software development foundation (C++)",
+                "Experience with a major deep learning framework (PyTorch)",
+                "Specialized knowledge in Computer Vision, a key AI domain",
+                "Experience with cloud platforms (Azure)"
+            ],
+            "weaknesses": [
+                "Lack of Python proficiency, which is critical for this role and the specified AI/ML libraries",
+                "No explicit experience with Natural Language Processing (NLP), a core component of the role's responsibilities",
+                "Missing experience with LLM orchestration frameworks like LangChain and LangGraph",
+                "No experience with Retrieval Augmented Generation (RAG) or Vector Databases, essential for retrieval pipelines",
+                "No experience with FastAPI for building APIs"
+            ],
+            "recommendation": "Sandeep possesses a strong foundation in software development and specialized experience in Computer Vision and PyTorch, demonstrating potential in AI/ML. However, there are significant gaps in critical areas for this specific AI/ML Intern role, including Python proficiency, NLP, and direct experience with LLM-specific frameworks (LangChain, LangGraph, RAG), FastAPI, and Vector Databases. While trainable, the immediate fit for a role focused on LLMs and retrieval pipelines is low due to these core missing skills. He would be a stronger candidate for a Computer Vision-focused ML role or a general software engineering position, or would need to rapidly acquire the missing Python and LLM stack skills to be considered for this specific internship."
+        }
+    },
+    {
+        "candidate": "Priya Singh",
+        "score": 0,
+        "evaluation": {
+            "match_score": 0,
+            "matching_skills": [],
+            "Missing_skills": [
+                "Python",
+                "Machine Learning",
+                "NLP",
+                "LangChain",
+                "LangGraph",
+                "RAG",
+                "FastAPI",
+                "Vector Databases"
+            ],
+            "strengths": [
+                "Strong foundation in enterprise software development",
+                "Proficiency in Java and Spring Boot for backend services",
+                "Experience with relational databases (SQL)",
+                "Familiarity with containerization (Docker)"
+            ],
+            "weaknesses": [
+                "Lacks specific AI/ML programming language (Python)",
+                "No experience with core Machine Learning or NLP concepts and tools",
+                "Does not possess skills in LLM orchestration frameworks (LangChain, LangGraph)",
+                "No demonstrated knowledge of Retrieval Augmented Generation (RAG) or Vector Databases",
+                "No experience with modern API frameworks commonly used in AI/ML (FastAPI)"
+            ],
+            "recommendation": "Priya Singh is not a suitable candidate for the Software Engineer Intern (AI/ML) role as her current skill set (Java, Spring Boot, SQL, Docker) does not align with the specific AI/ML, Python, and LLM-related requirements of the position. She would be a strong candidate for roles focused on enterprise Java backend development but would need to acquire significant new skills in Python, Machine Learning, NLP, and relevant AI/ML frameworks to be considered for this type of role."
+        }
+    }
+]
