@@ -1,3 +1,4 @@
+import json
 from typing import TypedDict
 
 from langgraph.graph import StateGraph, END
@@ -30,6 +31,20 @@ def evaluate_node(state):
         "evaluation": evaluation
     }
 
+def save_node(state):
+
+    with open(
+        "data/evaluation.json",
+        "w"
+    ) as f:
+        json.dump(
+            state["evaluation"],
+            f,
+            indent=4
+        )
+
+    return state
+
 
 workflow = StateGraph(GraphState)
 
@@ -52,8 +67,18 @@ workflow.add_edge(
     "evaluate"
 )
 
+workflow.add_node(
+    "save",
+    save_node
+)
+
 workflow.add_edge(
     "evaluate",
+    "save"
+)
+
+workflow.add_edge(
+    "save",
     END
 )
 
