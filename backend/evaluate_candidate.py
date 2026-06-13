@@ -42,57 +42,60 @@ llm = ChatGoogleGenerativeAI(
     google_api_key=os.getenv("GOOGLE_API_KEY")
 )
 
-prompt = f"""
-You are an expert technical recruiter.
+def evaluate_candidate(candidate_profile):
+    prompt = f"""
+    You are an expert technical recruiter.
 
-JOB DESCRIPTION:
+    JOB DESCRIPTION:
 
-{query_text}
+    {query_text}
 
-CANDIDATE PROFILE:
+    CANDIDATE PROFILE:
 
-{candidate_profile}
+    {candidate_profile}
 
-Return ONLY valid JSON.
+    Return ONLY valid JSON.
 
-Format:
+    Format:
 
-{{
-    "Match_score": number,
-    "Matching_skills": [],
-    "Missing_skills": [],
-    "Strengths": [],
-    "Weaknesses": [],
-    "Recommendation": ""
-}}
-"""
+    {{
+        "match_score": number,
+        "matching_skills": [],
+        "Missing_skills": [],
+        "strengths": [],
+        "weaknesses": [],
+        "recommendation": ""
+    }}
+    """
 
-response = llm.invoke(
-    [HumanMessage(content=prompt)]
-)
-
-result = response.content
-
-result = result.replace("```json", "")
-result = result.replace("```", "")
-result = result.strip()
-
-evaluation = json.loads(result)
-
-print("\nAI EVALUATION REPORT\n")
-print(json.dumps(
-    evaluation,
-    indent=4
-))
-
-with open(
-    "data/evaluation.json",
-    "w"
-) as f:
-    json.dump(
-        evaluation,
-        f,
-        indent=4
+    response = llm.invoke(
+        [HumanMessage(content=prompt)]
     )
 
-print("\nSaved to data/evaluation.json")
+    result = response.content
+
+    result = result.replace("```json", "")
+    result = result.replace("```", "")
+    result = result.strip()
+
+    evaluation = json.loads(result)
+    
+    return evaluation
+
+
+from retrieve import get_top_candidate
+
+if __name__ == "__main__":
+
+    candidate_profile = get_top_candidate()
+
+    evaluation = evaluate_candidate(
+        candidate_profile
+    )
+
+    print(
+        json.dumps(
+            evaluation,
+            indent=4
+        )
+    )

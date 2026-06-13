@@ -20,14 +20,15 @@ Responsibilities:
 
 query_embedding = get_embedding(query_text)
 
-results = collection.query(
-    query_embeddings=[query_embedding],
-    n_results=5
-)
+def get_top_candidate():
+    results = collection.query(
+        query_embeddings=[query_embedding],
+        n_results=1
+    )
 
-print("\nTop Matching Candidates:\n")
+    candidate_profile = results["documents"][0][0]
 
-for i, doc in enumerate(results["documents"][0], start=1):
-    print(f"\nCandidate #{i}")
-    print("")
-    print(doc[:500])
+    return candidate_profile
+
+if __name__ == "__main__":
+    print(get_top_candidate())
