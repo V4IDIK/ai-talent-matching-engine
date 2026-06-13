@@ -4,5 +4,9 @@ model = SentenceTransformer(
     "BAAI/bge-small-en-v1.5"
 )
 
+
 def get_embedding(text):
-    return model.encode(text).tolist()
+    return model.encode(
+        text,
+        normalize_embeddings=True
+    ).tolist()
