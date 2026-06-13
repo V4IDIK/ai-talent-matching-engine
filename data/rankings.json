@@ -1,0 +1,124 @@
+[
+    {
+        "candidate": "Rohan Gupta",
+        "score": 62.5,
+        "evaluation": {
+            "match_score": 62.5,
+            "matching_skills": [
+                "Python",
+                "LangChain",
+                "LangGraph",
+                "RAG",
+                "Vector Databases"
+            ],
+            "Missing_skills": [
+                "Machine Learning",
+                "NLP",
+                "FastAPI"
+            ],
+            "strengths": [
+                "Strong foundational skills in Python.",
+                "Proficiency in advanced LLM orchestration frameworks (LangChain, LangGraph).",
+                "Experience with Retrieval Augmented Generation (RAG).",
+                "Practical experience with a vector database (ChromaDB)."
+            ],
+            "weaknesses": [
+                "Lacks explicit Machine Learning and NLP skills, which are core to an AI/ML role.",
+                "No stated experience with FastAPI, a common tool for building APIs for AI services."
+            ],
+            "recommendation": "Rohan demonstrates a strong grasp of modern LLM development tools and retrieval pipelines, making him a good fit for the LLM integration and RAG aspects of the role. However, the absence of explicit Machine Learning, NLP, and FastAPI skills might require further development or mentorship for the broader 'AI/ML' responsibilities, especially for building 'AI-powered matching systems'. He could be a strong candidate if the team is willing to support his growth in these areas, or if the role primarily focuses on LLM integration rather than core ML model development."
+        }
+    },
+    {
+        "candidate": "Aarav Sharma",
+        "score": 35,
+        "evaluation": {
+            "match_score": 35,
+            "matching_skills": [
+                "Python",
+                "Machine Learning",
+                "FastAPI"
+            ],
+            "Missing_skills": [
+                "NLP",
+                "LangChain",
+                "LangGraph",
+                "RAG",
+                "Vector Databases"
+            ],
+            "strengths": [
+                "Strong foundational skills in Python and Machine Learning.",
+                "Practical experience with a prominent ML framework (TensorFlow).",
+                "Proficiency in building APIs with FastAPI, which is relevant for deploying AI models.",
+                "Experience with cloud platforms (AWS) is a valuable asset for deployment and scalability."
+            ],
+            "weaknesses": [
+                "Lack of specific experience with LLM orchestration frameworks like LangChain and LangGraph.",
+                "No stated experience with advanced NLP techniques directly related to LLMs.",
+                "Missing expertise in RAG (Retrieval Augmented Generation) and Vector Databases, which are central to the role's responsibilities for developing retrieval pipelines."
+            ],
+            "recommendation": "Aarav possesses a solid technical foundation in Python, Machine Learning, and API development, further bolstered by his TensorFlow experience. This makes him a strong candidate for general software engineering or traditional ML engineering roles. However, for this specific AI/ML Intern position, which heavily emphasizes modern LLM development, RAG, and related tools (LangChain, LangGraph, Vector Databases), Aarav has significant skill gaps. He would require substantial upskilling in these specific areas to meet the core requirements of building AI-powered matching systems and retrieval pipelines with LLMs."
+        }
+    },
+    {
+        "candidate": "Sandeep Kumar",
+        "score": 12,
+        "evaluation": {
+            "match_score": 12,
+            "matching_skills": [
+                "Machine Learning"
+            ],
+            "Missing_skills": [
+                "Python",
+                "NLP",
+                "LangChain",
+                "LangGraph",
+                "RAG",
+                "FastAPI",
+                "Vector Databases"
+            ],
+            "strengths": [
+                "Experience with a major Machine Learning framework (PyTorch).",
+                "General Software Development background.",
+                "Experience with cloud platforms (Azure).",
+                "Experience in a related AI domain (Computer Vision), demonstrating breadth in AI."
+            ],
+            "weaknesses": [
+                "Lack of specific Python experience, which is foundational for most AI/ML roles.",
+                "No explicit experience in Natural Language Processing (NLP) or Large Language Models (LLMs), which are central to the role's responsibilities.",
+                "Missing key modern AI/ML tools and concepts such as LangChain, LangGraph, RAG, FastAPI, and Vector Databases.",
+                "Computer Vision experience, while valuable, does not directly align with the NLP/LLM focus of this specific internship."
+            ],
+            "recommendation": "Sandeep possesses a solid foundation in software development and machine learning with PyTorch and Computer Vision experience. However, there's a significant gap in the specific skills required for this AI/ML intern role, particularly in Python, NLP, and the LLM ecosystem (LangChain, RAG, Vector Databases). While Sandeep demonstrates potential in AI, the immediate fit for a role focused on 'AI-powered matching systems,' 'LLMs,' and 'retrieval pipelines' is low due to the breadth of missing specialized skills. Recommend exploring candidates with more direct experience in Python, NLP, and the specified LLM-related frameworks for this particular role. Sandeep might be a better fit for a general ML or Computer Vision focused internship."
+        }
+    },
+    {
+        "candidate": "Priya Singh",
+        "score": 0,
+        "evaluation": {
+            "match_score": 0,
+            "matching_skills": [],
+            "Missing_skills": [
+                "Python",
+                "Machine Learning",
+                "NLP",
+                "LangChain",
+                "LangGraph",
+                "RAG",
+                "FastAPI",
+                "Vector Databases"
+            ],
+            "strengths": [
+                "Proficiency in Java and Spring Boot for backend development",
+                "Experience with SQL databases",
+                "Familiarity with Docker for containerization"
+            ],
+            "weaknesses": [
+                "Lack of experience in Python, Machine Learning, and Natural Language Processing (NLP)",
+                "No explicit experience with AI/ML specific frameworks (LangChain, LangGraph, RAG)",
+                "No experience with AI-centric tools like FastAPI for ML model deployment or Vector Databases"
+            ],
+            "recommendation": "Priya's technical background is robust in traditional backend development (Java, Spring Boot, SQL, Docker). However, her skills do not align with the specialized AI/ML requirements for this Software Engineer Intern (AI/ML) position. She lacks the core programming language (Python) and domain-specific knowledge (Machine Learning, NLP, LLMs, RAG) and tools (LangChain, LangGraph, FastAPI, Vector Databases) essential for this role. Therefore, she is not a suitable candidate for this specific AI/ML internship at this time."
+        }
+    }
+]
