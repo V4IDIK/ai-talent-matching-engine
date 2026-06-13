@@ -12,7 +12,7 @@ llm = ChatGoogleGenerativeAI(
     temperature=0
 )
 
-with open("data/resume.txt", "r") as f:
+with open("data/candidate_1.txt", "r") as f:
     resume_text = f.read()
 
 prompt = f"""
@@ -45,7 +45,7 @@ content = content.replace("```json", "")
 content = content.replace("```", "")
 content = content.strip()
 
-with open("data/resume.json", "w") as f:
+with open("data/candidate_1.json", "w") as f:
     f.write(content)
 
-print("Saved to data/resume.json")
+print("Saved to data/candidate_1.json")

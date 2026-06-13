@@ -4,7 +4,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 from embeddings import get_embedding
 
-with open("data/resume.json") as f:
+with open("data/candidate_1.json") as f:
     resume = json.load(f)
 
 with open("data/jd.json") as f:

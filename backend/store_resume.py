@@ -3,7 +3,7 @@ import json
 from embeddings import get_embedding
 from vector_store import collection
 
-with open("data/resume.json", "r") as f:
+with open("data/candidate_1.json", "r") as f:
     resume = json.load(f)
 
 candidate_name = resume["name"]
@@ -71,6 +71,16 @@ Education:
 embedding = get_embedding(resume_text)
 
 candidate_id = candidate_name.lower().replace(" ", "_")
+
+existing = collection.get(
+    ids=[candidate_id]
+)
+
+if existing["ids"]:
+    print(
+        f"{candidate_name} already exists."
+    )
+    exit()
 
 collection.add(
     ids=[candidate_id],
