@@ -1,33 +1,60 @@
 # AI Talent Matching Engine
 
-An AI-powered talent matching system that uses LLMs, semantic search, and RAG concepts to match candidate resumes with job descriptions.
+An AI-powered talent matching system that uses semantic search, RAG (Retrieval-Augmented Generation), and Gemini to match candidates with job descriptions.
 
 ## Features
 
-- Resume Parsing with Gemini
-- Job Description Parsing
-- Skill Extraction
-- Semantic Candidate Matching
-- ChromaDB Vector Search (Upcoming)
-- LangGraph Agent Workflow (Upcoming)
-- Langfuse Observability (Upcoming)
+* Semantic candidate retrieval using ChromaDB
+* BGE embeddings with Sentence Transformers
+* Gemini-powered candidate evaluation
+* Multi-candidate ranking
+* LangGraph workflow orchestration
+* Langfuse observability and tracing
 
 ## Tech Stack
 
-- Python
-- Gemini 2.5 Flash
-- LangChain
-- ChromaDB
-- Sentence Transformers (BGE)
-- LangGraph
-- Langfuse
-- FastAPI
-- Streamlit
+* Python
+* Gemini 2.5 Flash
+* LangChain
+* LangGraph
+* Langfuse
+* ChromaDB
+* Sentence Transformers (BGE)
 
-## Project Structure
+## Workflow
 
 ```text
-backend/
-data/
-chroma_db/
+Candidate Profiles
+        ↓
+     Embeddings
+        ↓
+      ChromaDB
+        ↓
+ Semantic Retrieval
+        ↓
+      Gemini
+        ↓
+ Candidate Evaluation
+        ↓
+ Candidate Ranking
+```
+
+## Run
+
+```bash
+pip install -r requirements.txt
+
+python backend/graph_ranking.py
+```
+
+## Concepts Demonstrated
+
+* Retrieval-Augmented Generation (RAG)
+* Semantic Search
+* Vector Databases
+* LLM-based Evaluation
+* Workflow Orchestration
+* AI Observability
+
+```
 ```
