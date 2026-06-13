@@ -1,17 +1,16 @@
 import json
 from typing import TypedDict
-
 from langgraph.graph import StateGraph, END
-
 from retrieve import get_top_candidate
 from evaluate_candidate import evaluate_candidate
+from langfuse import observe
 
 
 class GraphState(TypedDict):
     candidate: str
     evaluation: dict
 
-
+@observe(name="retrieve_node")
 def retrieve_node(state):
 
     candidate = get_top_candidate()
@@ -20,7 +19,7 @@ def retrieve_node(state):
         "candidate": candidate
     }
 
-
+@observe(name="evaluate_node")
 def evaluate_node(state):
 
     evaluation = evaluate_candidate(
@@ -31,6 +30,7 @@ def evaluate_node(state):
         "evaluation": evaluation
     }
 
+@observe(name="save_node")
 def save_node(state):
 
     with open(

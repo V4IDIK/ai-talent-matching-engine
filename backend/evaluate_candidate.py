@@ -2,7 +2,7 @@ import json
 import os
 
 from dotenv import load_dotenv
-
+from langfuse import observe
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.messages import HumanMessage
 
@@ -11,7 +11,6 @@ from vector_store import collection
 
 load_dotenv()
 
-# Load JD
 with open("data/jd.json", "r") as f:
     jd = json.load(f)
 
@@ -36,12 +35,12 @@ results = collection.query(
 
 candidate_profile = results["documents"][0][0]
 
-# Gemini
 llm = ChatGoogleGenerativeAI(
     model="gemini-2.5-flash",
     google_api_key=os.getenv("GOOGLE_API_KEY")
 )
 
+@observe(name="evaluate_candidate")
 def evaluate_candidate(candidate_profile):
     prompt = f"""
     You are an expert technical recruiter.
@@ -79,6 +78,7 @@ def evaluate_candidate(candidate_profile):
     result = result.strip()
 
     evaluation = json.loads(result)
+    print(f"Match score: {evaluation.get('match_score')}")
     
     return evaluation
 

@@ -2,11 +2,10 @@ import json
 
 from embeddings import get_embedding
 from vector_store import collection
-
+from langfuse import observe
 with open("data/jd.json", "r") as f:
     jd = json.load(f)
 
-# Build a rich query from the JD
 query_text = f"""
 Job Title:
 {jd.get("job_title", "")}
@@ -20,6 +19,7 @@ Responsibilities:
 
 query_embedding = get_embedding(query_text)
 
+@observe(name="get_top_candidate")
 def get_top_candidate():
     results = collection.query(
         query_embeddings=[query_embedding],
