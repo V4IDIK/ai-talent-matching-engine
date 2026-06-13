@@ -14,6 +14,7 @@ An AI-powered talent matching system that uses semantic search, RAG (Retrieval-A
 ## Tech Stack
 
 * Python
+* RAG
 * Gemini 2.5 Flash
 * LangChain
 * LangGraph
@@ -56,5 +57,3 @@ python backend/graph_ranking.py
 * Workflow Orchestration
 * AI Observability
 
-```
-```
