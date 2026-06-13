@@ -1,0 +1,27 @@
+{
+    "Match_score": 87.5,
+    "Matching_skills": [
+        "Python",
+        "Machine Learning",
+        "NLP",
+        "LangChain",
+        "LangGraph",
+        "RAG",
+        "Vector Databases"
+    ],
+    "Missing_skills": [
+        "FastAPI"
+    ],
+    "Strengths": [
+        "Excellent foundational and advanced skills in Python, Machine Learning, and NLP.",
+        "Direct experience with key LLM orchestration frameworks: LangChain and LangGraph.",
+        "Proven ability to work with Vector Databases (ChromaDB).",
+        "Hands-on project experience in relevant areas like RAG, LLMs, and Agentic AI.",
+        "Relevant internship experience applying ML/NLP in a practical setting (phishing detection).",
+        "Strong portfolio demonstrating practical application of deep learning and reinforcement learning."
+    ],
+    "Weaknesses": [
+        "Lacks explicit experience with FastAPI, though has experience with other web frameworks like Flask and Django."
+    ],
+    "Recommendation": "Vaidik Kumar is an exceptionally strong candidate for the Software Engineer Intern (AI/ML) role. They possess nearly all the required skills, including direct experience with LangChain, LangGraph, RAG, and Vector Databases, which are critical for the role's responsibilities. While FastAPI is not explicitly listed, their experience with Flask and Django suggests a strong aptitude for backend development and a quick learning curve for new frameworks. Their projects and internship demonstrate practical application of AI/ML concepts. I highly recommend proceeding with an interview for this candidate."
+}

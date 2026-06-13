@@ -53,21 +53,46 @@ CANDIDATE PROFILE:
 
 {candidate_profile}
 
-Evaluate the candidate and provide:
+Return ONLY valid JSON.
 
-1. Match Score (0-100)
-2. Matching Skills
-3. Missing Skills
-4. Strengths
-5. Weaknesses
-6. Final Recommendation
+Format:
 
-Keep the response concise and professional.
+{{
+    "Match_score": number,
+    "Matching_skills": [],
+    "Missing_skills": [],
+    "Strengths": [],
+    "Weaknesses": [],
+    "Recommendation": ""
+}}
 """
 
 response = llm.invoke(
     [HumanMessage(content=prompt)]
 )
 
+result = response.content
+
+result = result.replace("```json", "")
+result = result.replace("```", "")
+result = result.strip()
+
+evaluation = json.loads(result)
+
 print("\nAI EVALUATION REPORT\n")
-print(response.content)
+print(json.dumps(
+    evaluation,
+    indent=4
+))
+
+with open(
+    "data/evaluation.json",
+    "w"
+) as f:
+    json.dump(
+        evaluation,
+        f,
+        indent=4
+    )
+
+print("\nSaved to data/evaluation.json")
